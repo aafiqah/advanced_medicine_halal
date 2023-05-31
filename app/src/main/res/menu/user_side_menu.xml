@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navhome"
+        android:title="Home"
+        android:icon="@drawable/home_icon"/>
+
+    <item
+        android:id="@+id/navhalaldetection"
+        android:title="Halal Detection"
+        android:icon="@drawable/halal"/>
+
+    <item
+        android:id="@+id/navcounterfeitdetection"
+        android:title="Counterfeit Detection"
+        android:icon="@drawable/icon9"/>
+
+    <item
+        android:id="@+id/navreportform"
+        android:title="Report Form"
+        android:icon="@drawable/report"/>
+
+    <item
+        android:id="@+id/navlogout"
+        android:title="Logout"
+        android:icon="@drawable/logout_icon"/>
+</menu>

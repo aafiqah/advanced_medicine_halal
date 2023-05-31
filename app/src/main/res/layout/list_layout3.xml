@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:contentPadding="5dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/lightblue"
+        android:padding="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="5dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:id="@+id/viewuserfullname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Fullname: "
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/userfullnameresult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/viewuserfullname"
+                    android:text="TextView"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/viewuserrole"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Role: "
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/userroleresult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/viewuserrole"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/viewuserphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Phone Number: "
+                    android:layout_centerVertical="true"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/userphoneresult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_toEndOf="@+id/viewuserphone"
+                    android:text="TextView"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/viewuseremail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Email Address: "
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/useremailrresult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_toEndOf="@+id/viewuseremail"
+                    android:text="TextView"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/viewuserpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Password: "
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/userpasswordresult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_toEndOf="@+id/viewuserpassword"
+                    android:text="TextView"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <ImageView
+                    android:id="@+id/edituserbtn"
+                    android:layout_width="193dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/edit_icon"/>
+
+                <ImageView
+                    android:id="@+id/deleteuserbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_toEndOf="@+id/edituserbtn"
+                    android:src="@drawable/delete_icon"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

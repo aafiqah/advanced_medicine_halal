@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginRegisterOption"
+    android:background="@color/darkgray">
+
+    <TextView
+        android:id="@+id/logotxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/catamaran_medium"
+        android:text="Advanced Medicine Halal Verification System"
+        android:textAlignment="center"
+        android:textColor="@color/lightblue"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="358dp"
+        android:layout_height="385dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logotxt2"
+        app:srcCompat="@drawable/icon11" />
+
+    <TextView
+        android:id="@+id/createaccounttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/catamaran_medium"
+        android:text="Open or Create Your  Account"
+        android:textAlignment="center"
+        android:textColor="@color/lightblue"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image1" />
+
+    <Button
+        android:id="@+id/loginbtn1"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/catamaran_medium"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="@color/darkgray"
+        android:textSize="20sp"
+        android:transitionName="transition_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/registerbtn1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createaccounttxt" />
+
+    <Button
+        android:id="@+id/registerbtn1"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/catamaran_medium"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textColor="@color/darkgray"
+        android:textSize="20sp"
+        android:transitionName="transition_register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/loginbtn1"
+        app:layout_constraintTop_toBottomOf="@+id/createaccounttxt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

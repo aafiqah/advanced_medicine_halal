@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/loginbackbtn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:src="@drawable/back_icon"/>
+
+    <TextView
+        android:id="@+id/logintxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/catamaran_medium"
+        android:text="Login"
+        android:textColor="@color/darkgray"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginbackbtn" />
+
+    <ImageView
+        android:id="@+id/loginimg"
+        android:layout_width="268dp"
+        android:layout_height="215dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logintxt"
+        app:srcCompat="@drawable/icon1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/emailtxt_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            app:hintTextColor="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidthFocused="2dp"
+            android:drawableStart="@drawable/email_icon"
+            android:paddingStart="10dp"
+            app:startIconTint="@color/black"
+            android:background="@drawable/custom_input"
+            android:fontFamily="@font/catamaran_medium"
+            android:textSize="22sp"/>
+
+        <EditText
+            android:id="@+id/pwdtxt_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            app:hintTextColor="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidthFocused="2dp"
+            android:drawableStart="@drawable/password"
+            android:paddingStart="10dp"
+            app:startIconTint="@color/black"
+            android:background="@drawable/custom_input"
+            android:fontFamily="@font/catamaran_medium"
+            android:textSize="22sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp">
+            <CheckBox
+                android:id="@+id/showpwdcheck_login"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                android:text="Show Password"
+                android:buttonTint="@color/black"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/forgetpwdbtn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="Forget Password"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/catamaran_medium"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="Login"
+            android:backgroundTint="@color/darkgray"
+            android:fontFamily="@font/catamaran_medium"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

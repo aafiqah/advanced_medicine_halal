@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "236731236216",
+    "firebase_url": "https://medicine-halal-verification-default-rtdb.firebaseio.com",
+    "project_id": "medicine-halal-verification",
+    "storage_bucket": "medicine-halal-verification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236731236216:android:977aaf97d3b8611502928d",
+        "android_client_info": {
+          "package_name": "com.example.medicinehalal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236731236216-m8ga9gquthk9bbd50g18gqid7657sqep.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdivMpm-Nmxo2VwOZ-m56PysTBDMP67Tk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "236731236216-m8ga9gquthk9bbd50g18gqid7657sqep.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportForm1"
+    android:id="@+id/reportform1_drawer"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:background="@color/darkgray">
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/admin_side_menu"
+        android:layout_gravity="start"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/sidemenu4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/darkgray"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:navigationIcon="@drawable/side"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Report Form"
+                android:textAlignment="center"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/catamaran_medium"
+                android:textColor="@color/lightblue"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Full Name: "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/catamaran_medium"
+                android:textColor="@color/lightblue"/>
+
+            <EditText
+                android:id="@+id/report_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingStart="10dp"
+                android:inputType="text"
+                app:boxStrokeColor="@color/black"
+                android:backgroundTint="@color/white"
+                app:boxStrokeWidthFocused="2dp"
+                android:background="@drawable/custom_input"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/catamaran_medium"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Email Address: "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/catamaran_medium"
+                android:textColor="@color/lightblue"/>
+
+            <EditText
+                android:id="@+id/report_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingStart="10dp"
+                android:inputType="textEmailAddress"
+                app:boxStrokeColor="@color/black"
+                android:backgroundTint="@color/white"
+                app:boxStrokeWidthFocused="2dp"
+                android:background="@drawable/custom_input"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/catamaran_medium"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Phone Number: "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/catamaran_medium"
+                android:textColor="@color/lightblue"/>
+
+            <EditText
+                android:id="@+id/report_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingStart="10dp"
+                android:inputType="phone"
+                app:boxStrokeColor="@color/black"
+                android:backgroundTint="@color/white"
+                app:boxStrokeWidthFocused="2dp"
+                android:background="@drawable/custom_input"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/catamaran_medium"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Medicine Name: "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/catamaran_medium"
+                android:textColor="@color/lightblue"/>
+
+            <EditText
+                android:id="@+id/report_medicinename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:paddingStart="10dp"
+                android:inputType="text"
+                app:boxStrokeColor="@color/black"
+                android:backgroundTint="@color/white"
+                app:boxStrokeWidthFocused="2dp"
+                android:background="@drawable/custom_input"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/catamaran_medium"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Where you buy that medicine?: "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/catamaran_medium"
+                android:textColor="@color/lightblue"/>
+
+            <EditText
+                android:id="@+id/report_medicinelocation"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_input"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/catamaran_medium"
+                android:inputType="textMultiLine"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Medicine Picture: "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/catamaran_medium"
+                android:textColor="@color/lightblue"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp">
+                <ImageView
+                    android:id="@+id/display_picture"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/photogallery"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="vertical"
+                    android:layout_toEndOf="@id/display_picture">
+                    <Button
+                        android:id="@+id/report_camerabtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Open\nCamera"
+                        android:backgroundTint="@color/white"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/catamaran_medium"
+                        android:textSize="18sp"/>
+                    <Button
+                        android:id="@+id/report_uploadbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:text="Open Gallery"
+                        android:backgroundTint="@color/white"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/catamaran_medium"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Medicine Issues: "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/catamaran_medium"
+                android:textColor="@color/lightblue"/>
+
+            <RadioGroup
+                android:id="@+id/report_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="10dp">
+
+                <RadioButton
+                    android:id="@+id/report_containharamradio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contain Haram / Mushbooh Ingredient"
+                    android:textSize="18sp"
+                    android:textColor="@color/lightblue"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/report_fakeradio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Not Registered By KKM and Fake"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/lightblue"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Additional informations: "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/catamaran_medium"
+                android:textColor="@color/lightblue"/>
+
+            <EditText
+                android:id="@+id/report_medicineadditional"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_input"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/catamaran_medium"
+                android:inputType="textMultiLine"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp" />
+
+            <Button
+                android:id="@+id/report_submitbtn"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="60dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:text="Submit"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/lightblue"
+                android:fontFamily="@font/catamaran_medium"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

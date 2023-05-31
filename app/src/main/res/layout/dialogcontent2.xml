@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Update Content Panel"
+        android:background="@color/darkgray"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="#fff"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Medicine Name"
+                android:id="@+id/medicinenameedit"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Serial Number"
+                android:id="@+id/serialnumberedit"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="MAL Number"
+                android:id="@+id/malnumberedit"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Halal Status"
+                android:id="@+id/halalstatusedit"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Counterfeit Status"
+                android:id="@+id/counterfeitstatusedit"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Manufacturer"
+                android:id="@+id/manufactureredit"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Active Ingredient"
+                android:id="@+id/activeingredientedit"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="In-Active Ingredient"
+                android:id="@+id/inactiveingredientedit"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Haram Ingredient"
+                android:id="@+id/haramingredientedit"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mushbooh Ingredient"
+                android:id="@+id/mushboohingredientedit"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Medicine Picture Link"
+                android:id="@+id/medicinepictureedit"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:id="@+id/submitedit2"
+                android:backgroundTint="@color/darkgray"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

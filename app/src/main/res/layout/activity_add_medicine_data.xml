@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMedicineData"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/adduserbackbtn_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:src="@drawable/back_icon"/>
+
+    <TextView
+        android:id="@+id/addusertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/catamaran_medium"
+        android:text="Add Medicine"
+        android:textColor="@color/darkgray"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:id="@+id/addmedicine_medicine"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Medicine Name"
+                android:inputType="text"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                android:paddingStart="10dp"
+                android:background="@drawable/custom_input"
+                android:fontFamily="@font/catamaran_medium"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/addmedicine_serialnumber"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Serial Number"
+                android:inputType="text"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="10dp"
+                android:background="@drawable/custom_input"
+                android:fontFamily="@font/catamaran_medium"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/addmedicine_malnumber"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="MAL Number"
+                android:inputType="text"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="10dp"
+                android:background="@drawable/custom_input"
+                android:fontFamily="@font/catamaran_medium"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/addmedicine_halalstatus"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Halal Status"
+                android:inputType="text"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="10dp"
+                android:background="@drawable/custom_input"
+                android:fontFamily="@font/catamaran_medium"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/addmedicine_counterfeitstatus"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Counterfeit Status"
+                android:inputType="text"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="10dp"
+                android:background="@drawable/custom_input"
+                android:fontFamily="@font/catamaran_medium"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/addmedicine_manufacturer"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Manufacturer"
+                android:inputType="text"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="10dp"
+                android:background="@drawable/custom_input"
+                android:fontFamily="@font/catamaran_medium"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/addmedicine_activeingredient"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Active Ingredient"
+                android:inputType="text"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="10dp"
+                android:background="@drawable/custom_input"
+                android:fontFamily="@font/catamaran_medium"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/addmedicine_inactiveingredient"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="in-Active Ingredient"
+                android:inputType="text"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="10dp"
+                android:background="@drawable/custom_input"
+                android:fontFamily="@font/catamaran_medium"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/addmedicine_haramingredient"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Haram Ingredient"
+                android:inputType="text"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="10dp"
+                android:background="@drawable/custom_input"
+                android:fontFamily="@font/catamaran_medium"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/addmedicine_mushboohingredient"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Mushbooh Ingredient"
+                android:inputType="text"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="10dp"
+                android:background="@drawable/custom_input"
+                android:fontFamily="@font/catamaran_medium"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/addmedicine_medicinepicture"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Medicine Pictuer Link"
+                android:inputType="text"
+                app:hintTextColor="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="10dp"
+                android:background="@drawable/custom_input"
+                android:fontFamily="@font/catamaran_medium"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/btn_addmedicine"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Add"
+                android:backgroundTint="@color/darkgray"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:layout_marginBottom="50dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
